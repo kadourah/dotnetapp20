@@ -1,0 +1,17 @@
+id: ea6d71a3-5d3f-449b-85dc-073e45ab8635
+timestamp: 2023-08-13T14:38:39Z
+username: kadourah
+source: TAP-GUI
+accelerator:
+  name: weatherforecast-csharp
+  source:
+    image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:d08db384477a6a0b1b288b70aea1c1d24b7ea38edd726b4c1b977128e625046b
+fragments:
+  - name: tap-workload
+    source:
+      image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  applicationName: dotnetapp20
+  bsGitBranch: main
+  bsGitRepository: github.com?owner=kadourah&repo=dotnetapp20
+  projectName: dotnet-app-20
